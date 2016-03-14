@@ -31,7 +31,7 @@ html { height: 100%; }
 
 body {
   font-size: 12px;
-  font-family: "宋体";
+  font-family: "微软雅黑";
   -webkit-font-smoothing: antialiased;/*字体抗锯齿*/
   height: 100%;
 }
@@ -47,3 +47,13 @@ textarea { outline: none; }
 textarea { resize: none; }
 
 a { text-decoration: none; }
+
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}

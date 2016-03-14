@@ -1,63 +1,219 @@
 @charset "utf-8";
 
-/*nav导航*/
+body{
+  max-width: 1080px;
+  margin: 0 auto;
+  color: #9A9A9A;
+}
 
-.nav {
+/*head*/
+.head{
   width: 100%;
-  height: 42px;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
+  height: 74px;
+  background-color: #6DBE9A;
   text-align: center;
-  line-height: 42px;
-  -webkit-box-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
-  -ms-box-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
-  z-index: 999;
+  padding-top: 40px;
 }
 
-.nav li {
-  width: 10%;
-  float: right;
+/*name*/
+.name{
+  width: 100%;
+  height: 210px;
+  padding-top: 80px;
+  text-align: center;
+  font-family: 华文行楷;
+}
+.name h1{
+  color: #333333;
+  font-size: 55px;
+}
+.name h2{
+  color: #8D8D8D;
+  font-size: 40px;
+  line-height: 80px;
 }
 
-.nav li:first-child {
+.intro{
+  background: #F2F2F2;
+  width: 100%;
+  padding: 10px 0;
+}
+.intro div{
   float: left;
 }
-
-.nav li, .nav li>a {
-  display: inline-block;
+.about{
   height: 100%;
+  width: 430px;
+  padding: 0 45px;
 }
-
-.nav li>a {
+.about h3{
+  color: #515457;
+  line-height: 40px;
+  font-size: 24px;
+  font-family: 华文行楷;
+}
+.about p{
+  line-height: 20px;
+}
+.contact{
+  width: 255px;
+  padding: 20px 20px;
+}
+.contact li{
+  display: block;
+  line-height: 30px;
+  text-indent: 4em;
+  position: relative;
+}
+.link{
+  padding: 20px 20px;
+}
+.link li{
+  display: block;
+  line-height: 30px;
+  text-indent: 4em;
+  position: relative;
+}
+.contact li:before,
+.link li:before{
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+.contact a,
+.link a{
+  color: #9A9A9A;
+  display: block;
   width: 100%;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 16px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.contact a:hover,
+.link a:hover{
+  color: #515457; 
+}
+.home:before{
+  background: url(../images/home.png) center no-repeat;
+}
+.phone:before{
+  background: url(../images/phone.png) center no-repeat;
+}
+.address:before{
+  background: url(../images/address.png) center no-repeat;
+}
+.mail:before{
+  background: url(../images/mail.png) center no-repeat;
+}
+.fb:before{
+  background: url(../images/fb.png) center no-repeat;
+  background-size: 80% 80%;
+}
+.twitter:before{
+  background: url(../images/twitter.png) center no-repeat;
+  background-size: 80% 80%;
+}
+.github:before{
+  background: url(../images/github.png) center no-repeat;
+  background-size: 80% 80%;
+}
+.imooc:before{
+  background: url(../images/imooc.png) center no-repeat;
+  background-size: 80% 80%;
 }
 
-.hover, .nav li>a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.8);
+/*experience*/
+.experience_box{
+  background-color: #F5F5F5;
+}
+.experience_box h1{
+  display: block;
+  margin:0 45px;
+  line-height: 145px;
+  color: #515254;
+  font-size: 38px;
+  border-bottom: 5px solid #E2E2E2;
+  font-family: 华文行楷;
+}
+.experience_box h1:after{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 33%;
+  margin-bottom: -5px;
+  background-color: #6DBE9A;
+}
+.experience{
+  display: block;
+  margin: 0 45px;
+  padding: 20px 0;
+  line-height: 20px;
+}
+.experience>li{
+  float: left;
+  display: inline-block;
+  width: 40%;
+  padding: 0 35px;
+}
+.experience h3{
+  color: #515457;
 }
 
-
-/*page内容*/
-
-#page1, #page3, #page5 {
-  background: #000;
+/*synthesize*/
+.synthesize{
+  padding: 20px 45px;
+  height: 500px;
+  background-color: #F5F5F5;
 }
-
-#page2, #page4 {
-  background: #FFF;
+.synthesize>div{
+  float: left;
 }
-
-
-/*page1*/
+.education{
+  width: 27%;
+  height: 100%;
+  border: 2px solid #9DD1BA;
+  background-color: #FFFFFF;
+  margin-right: 25px;
+}
+.education h3{
+  display: block;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-family: 华文行楷;
+  text-align: center;
+  font-size: 26px;
+  background-color: #6DBE9A;
+}
+.education li{
+  display: block;
+  padding: 10px 35px;
+  line-height: 20px;
+}
+.li_box{
+  display: block;
+  width: 32%;
+}
+.li_box li{
+  display: block;
+  background-color: #FFFFFF;
+}
+.awards{
+  padding: 0 15px;
+  margin: 25px 0;
+}
+.awards h3{
+  line-height: 60px;
+  font-family: 华文行楷;
+  font-size: 26px;
+  color: #515254;
+}
+.awards div{
+  border-bottom: 1px solid #F8F8F8;
+  padding: 0 0 10px 45px;
+  margin-top: 10px;
+  background: url(../images/awards.jpg) no-repeat;
+}
