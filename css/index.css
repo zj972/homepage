@@ -162,22 +162,30 @@ body{
 .experience h3{
   color: #515457;
 }
+.experience a{
+  color: #515457;
+}
+.experience a:hover{
+  color: #333333;
+}
 
 /*synthesize*/
 .synthesize{
   padding: 20px 45px;
-  height: 500px;
   background-color: #F5F5F5;
 }
 .synthesize>div{
   float: left;
+}
+.synthesize>div:last-child{
+  float: right;
 }
 .education{
   width: 27%;
   height: 100%;
   border: 2px solid #9DD1BA;
   background-color: #FFFFFF;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 .education h3{
   display: block;
@@ -193,17 +201,32 @@ body{
   padding: 10px 35px;
   line-height: 20px;
 }
+
+/*li_box*/
 .li_box{
-  display: block;
-  width: 32%;
+  width: 35%;
+  margin-right: 35px;
 }
-.li_box li{
-  display: block;
+.li_box div{
   background-color: #FFFFFF;
 }
+
+/*awards*/
 .awards{
   padding: 0 15px;
-  margin: 25px 0;
+  margin-bottom: 25px;
+  border-right: 2px solid #DDDDDD;
+  position: relative;
+}
+.awards:after{
+  content: "";
+  display: block;
+  height: 70px;
+  width: 2px;
+  background-color: #6DBE9A;
+  position: absolute;
+  top: 0;
+  right: -2px;
 }
 .awards h3{
   line-height: 60px;
@@ -213,7 +236,98 @@ body{
 }
 .awards div{
   border-bottom: 1px solid #F8F8F8;
-  padding: 0 0 10px 45px;
+  padding: 0 10px 10px 45px;
   margin-top: 10px;
   background: url(../images/awards.jpg) no-repeat;
+}
+.awards a{
+  color: #515457;
+}
+.awards a:hover{
+  color: #333333; 
+}
+
+/*skills*/
+.skills{
+  width: 20%;
+  height: 100%;
+  background: #FFFFFF;
+  margin-right: 25px;
+}
+.skills h3{
+  display: block;
+  line-height: 60px;
+  color: #515255;
+  font-family: 华文行楷;
+  text-align: center;
+  font-size: 26px;
+  border-bottom: 1px solid #F5F5F5;
+}
+.skills ul{
+  display: block;
+  padding: 20px 0;
+}
+.skills li{
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  color: #515255;
+  margin: 0 30px;
+  border-bottom: 3px solid #6DBE9A;
+}
+.skills li:after{
+  display: block;
+  content: "";
+  height: 3px;
+  background: #515254;
+  margin-bottom: -3px;
+}
+.html:after{
+  width: 80%;
+}
+.js:after{
+  width: 60%;
+}
+.h5:after{
+  width: 40%;
+}
+.jq:after{
+  width: 70%;
+}
+.php:after{
+  width: 50%;
+}
+.less:after{
+  width: 60%;
+}
+
+/*setting*/
+.setting{
+  width: 70px;
+  height: 100%;
+  background: #FFFFFF;
+}
+.setting div{
+  display: table-cell;
+  vertical-align: middle;
+  background: #6EBF9A;
+  text-align: center;
+  width: 70px;
+  height: 60px;
+}
+.setting li{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+/*footer*/
+footer{
+  background: #F5F5F5;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #FFFFFF;
 }
