@@ -1,5 +1,18 @@
 # Yangshaobo
 
+> personal blog
+
+## 待解决的问题
+
+>1.npm ERR! invalid
+
+```
+npm ERR! invalid: @angular/compiler-cli@4.0.0 E:\Boyaa\yangshaobo\node_modules\@angular\compiler-cli
+npm ERR! invalid: typescript@2.2.1 E:\Boyaa\yangshaobo\node_modules\typescript
+```
+
+## 已解决的问题
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
 ## Development server
